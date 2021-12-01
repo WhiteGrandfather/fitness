@@ -5,9 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес</title>
-  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+  <body class="fitness">
+  <header class="fitness__header header">
+    <div class="header__wrapper">
 
-</body>
+      <svg class="header__logo" width="89" height="20">
+        <title>Fitness logo</title>
+        <use xlink:href="#icon-logo"></use>
+      </svg>
+
+      <div class="header__main">
+
+        <p class="header__city">омск</p>
+
+        <div class="header__title-wrapper">
+          <h1 class="header__title">
+            Фитнес<br>
+            центр
+          </h1>
+          <p class="header__text">
+            Тренажёрный зал<br>
+            Групповые занятия<br>
+            Кардио-зона
+          </p>
+        </div>
+
+        <button class="header__button" type="button">Купить абонемент</button>
+
+      </div>
+
+      <div class="header__banner">
+        <picture>
+          <source type="image/webp" media="(min-width: 1368px)" srcset="img/banner-man-tab-x1.webp 1x, img/banner-man-tab-x2.webp 2x">
+          <source type="image/webp" srcset="img/banner-man-x2.webp 1x, img/banner-man-x2.webp 2x">
+
+          <source media="(min-width: 1368px)" srcset="img/banner-man-tab-x1.jpg 1x, img/banner-man-tab-x2.jpg 2x">
+          <img class="header__banner-image" src="img/banner-man-x1.jpg" srcset="img/banner-man-x2.jpg 2x" width="500" height="556" alt="Banner">
+        </picture>
+      </div>
+
+      <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+
+      <ul class="header__socials">
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">fb</a>
+        </li>
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">vk</a>
+        </li>
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">ig</a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main class="fitness__main main">
+
+  </main>
+
+  <footer class="fitness__footer footer">
+
+  </footer>
+
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  </body>
 </html>

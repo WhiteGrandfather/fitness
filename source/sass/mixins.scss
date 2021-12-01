@@ -1,0 +1,16 @@
+@mixin button-border {
+
+  min-width: 234px;
+  padding: 19px;
+
+  font-family: $Roboto-condensed;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: transparent;
+
+  border: 4px solid $white;
+}
