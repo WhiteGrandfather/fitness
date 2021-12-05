@@ -66,12 +66,21 @@ ul {
   list-style-type: none;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
+  padding: 0;
   font-family: $Bebas-neue;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 img {

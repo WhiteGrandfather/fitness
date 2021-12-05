@@ -2,7 +2,7 @@
   min-height: 658px;
   padding: 30px 103px;
 
-  background-image: $gradient-purple;
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 }
 
 .header__wrapper {
@@ -16,9 +16,9 @@
   flex-direction: column;
   align-items: flex-end;
 
-  width: 39.7%;
-  padding-top: 86px;
-  padding-right: 64px;
+  width: 39.6%;
+  padding-top: 134px;
+  padding-right: 63px;
 }
 
 .header__logo {
@@ -64,7 +64,7 @@
 
 .header__text {
   position: absolute;
-  top: 52%;
+  top: 59%;
   left: -26.5%;
 
   font-family: $Roboto-condensed;
@@ -119,10 +119,18 @@
   color: $white;
 }
 
+@media (min-width: 1400px) {
+  .header {
+    background-image: conic-gradient(from 130.31deg at 24% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+}
+
 @media (max-width: 1365px) {
   .header {
     min-height: 554px;
     padding: 40px 45px;
+
+    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
 
   .header__logo {
@@ -176,6 +184,12 @@
 
   .header__socials {
     display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .header {
+    background-image: conic-gradient(from 130.31deg at 33% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
 }
 

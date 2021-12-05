@@ -38,10 +38,10 @@
 
       <div class="header__banner">
         <picture>
-          <source type="image/webp" media="(min-width: 1368px)" srcset="img/banner-man-tab-x1.webp 1x, img/banner-man-tab-x2.webp 2x">
+          <source type="image/webp" media="(max-width: 1368px)" srcset="img/banner-man-tab-x1.webp 1x, img/banner-man-tab-x2.webp 2x">
           <source type="image/webp" srcset="img/banner-man-x2.webp 1x, img/banner-man-x2.webp 2x">
 
-          <source media="(min-width: 1368px)" srcset="img/banner-man-tab-x1.jpg 1x, img/banner-man-tab-x2.jpg 2x">
+          <source media="(max-width: 1368px)" srcset="img/banner-man-tab-x1.jpg 1x, img/banner-man-tab-x2.jpg 2x">
           <img class="header__banner-image" src="img/banner-man-x1.jpg" srcset="img/banner-man-x2.jpg 2x" width="500" height="556" alt="Banner">
         </picture>
       </div>
@@ -65,6 +65,73 @@
 
   <main class="fitness__main main">
 
+    <div class="main__group">
+
+      <div class="main__training">
+        <div class="main__training-text-wrapper">
+          <h2 class="main__title main__title--training">Тренажерный зал</h2>
+          <p class="main__training-top-text">
+            Просторный зал площадью 900 кв/м
+          </p>
+          <p class="main__training-text">
+            Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.<br>
+          </p>
+          <p class="main__training-text main__training-text--not-tab">
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="main__training-media">
+
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mob-x1.webp 1x, img/gym-mob-x2.webp 2x">
+            <source type="image/webp" media="(max-width: 1368px)" srcset="img/gym-tab-x1.webp 1x, img/gym-tab-x2.webp 2x">
+            <source type="image/webp" srcset="img/gym-x2.webp 1x, img/gym-x2.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/gym-mob-x1.jpg 1x, img/gym-mob-x2.jpg 2x">
+            <source media="(max-width: 1368px)" srcset="img/gym-tab-x1.jpg 1x, img/gym-tab-x2.jpg 2x">
+            <img class="main__training-image" src="img/gym-x1.jpg" srcset="img/gym-x2.jpg 2x" width="660" height="401" alt="Тренажерный зал">
+          </picture>
+
+          <div class="main__video-wrapper">
+            <div class="main__video video" id="video-1">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/prew-mob-x1.webp 1x, img/prew-mob-x2.webp 2x">
+                <source type="image/webp" media="(max-width: 1368px)" srcset="img/prew-tab-x1.webp 1x, img/prew-tab-x2.webp 2x">
+                <source type="image/webp" srcset="img/prew-x2.webp 1x, img/prew-x2.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/prew-mob-x1.jpg 1x, img/prew-mob-x2.jpg 2x">
+                <source media="(min-width: 1368px)" srcset="img/prew-tab-x1.jpg 1x, img/prew-tab-x2.jpg 2x">
+                <img class="video__image" src="img/prew-x1.jpg" srcset="img/prew-x2.jpg 2x" width="364" height="228" alt="promo video">
+              </picture>
+
+              <div class="video__button-container">
+
+                <button class="video__button" type="button" data-video="video-1" data-src="">
+                  <svg class="video__button-icon" width="17" height="17">
+                    <use xlink:href="#icon-play"></use>
+                  </svg>
+
+                  <svg class="video__button-ellipse" width="72" height="72"  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_156)" stroke-opacity="1" stroke-width="2"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_1_156" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#ED0233"/>
+                          <stop offset="1" stop-color="#003EB7"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  Play
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
   </main>
 
   <footer class="fitness__footer footer">
@@ -74,6 +141,8 @@
   <div style="display:none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
+
+  <script src="js/script.js"></script>
 
   </body>
 </html>

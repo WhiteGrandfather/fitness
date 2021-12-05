@@ -1,0 +1,159 @@
+.main__group {
+  padding: 120px 103px;
+}
+
+.main__title {
+  color: $dark-blue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  &--training {
+    text-align: left;
+  }
+}
+
+.main__training {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__training-text-wrapper {
+  max-width: 377px;
+  padding-top: 47px;
+  padding-right: 22px;
+
+}
+
+.main__training-top-text {
+  margin-top: 8px;
+  margin-bottom: 38px;
+
+  font-family: $Roboto-condensed;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $dark-blue;
+}
+
+.main__training-text {
+  margin-top: 10px;
+
+  font-family: $Roboto-condensed;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: $dark-blue;
+}
+
+.main__training-media {
+  position: relative;
+
+  padding-left: 63px;
+  padding-bottom: 115px;
+}
+
+.main__video-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1365px) {
+  .main__group {
+    padding: 100px 45px;
+  }
+
+  .main__title {
+    font-size: 42px;
+    line-height: 42px;
+
+    &--training {
+      text-align: center;
+    }
+  }
+
+  .main__training {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__training-text-wrapper {
+    max-width: 502px;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .main__training-top-text {
+    text-align: center;
+  }
+
+  .main__training-text {
+    text-align: center;
+
+    &:not(.main__training-text--not-tab) {
+      display: none;
+    }
+  }
+
+  .main__training-media {
+    padding-left: 0;
+    padding-bottom: 83px;
+  }
+
+  .main__video-wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .main__group {
+    padding: 70px 0;
+  }
+
+  .main__title{
+    font-size: 32px;
+    line-height: 32px;
+
+    &--training {
+      text-align: left;
+    }
+  }
+
+  .main__training-text-wrapper {
+    max-width: initial;
+    width: 100%;
+    padding: 40px 15px;
+    padding-top: 0;
+  }
+
+  .main__training-top-text {
+    margin-top: 3px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  .main__training-text {
+    text-align: left;
+  }
+
+  .main__training-media {
+    width: 100%;
+  }
+
+  .main__training-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .main__video-wrapper {
+    position: relative;
+
+    margin-top: 40px;
+  }
+
+}
