@@ -1,0 +1,241 @@
+.tabs {
+  padding-top: 33px;
+}
+
+.tabs__list-wrapper {
+  max-width: 342px;
+  margin: auto;
+  padding-bottom: 39px;
+}
+
+.tabs__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs__item-button {
+  padding: 20px 0;
+
+  font-family: $Roboto-condensed;
+  font-size: 20px;
+  line-height: 150%;
+  color: $dark-blue;
+  opacity: .5;
+
+  &--active,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.tabs__line-wrapper {
+  width: 100%;
+  height: 2px;
+
+  background-color: rgba(120, 120, 120, .2);
+}
+
+.tabs__line {
+  width: 67px;
+  height: 2px;
+
+  background-color: $red;
+
+  transition: width 500ms ease-in-out;
+}
+
+.tabs__cards-list-wrapper {
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+}
+
+.tabs__cards-list {
+  display: flex;
+
+  transition: transform 500ms ease-in-out;
+}
+
+.tabs__card-item {
+  display: flex;
+
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.tabs__cards {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.tabs__card {
+  width: 360px;
+
+  &--active {
+    padding: 7px;
+    background-image: linear-gradient(130deg, #D10A42 0%,  #00359F 100%);
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.tabs__card-wrapper {
+  padding: 68px 20px;
+
+  background-color: $white;
+}
+
+.tabs__card--active .tabs__card-wrapper {
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
+.tabs__title {
+  margin-bottom: 22px;
+
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.tabs__text {
+  font-family: $Roboto-condensed;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: $gray-blue;
+}
+
+.tabs__price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  margin-top: 96px;
+  margin-bottom: 59px;
+}
+
+.tabs__price {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+
+  margin-right: 14px;
+
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: $light-blue;
+}
+
+.tabs__price-shadow {
+  position: absolute;
+  left: -19px;
+  bottom: -4px;
+  z-index: -1;
+
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  color: #E8E8E8;
+
+  opacity: .48;
+}
+
+.tabs__price-icon {
+  z-index: 2;
+}
+
+.tabs__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 206px;
+  height: 64px;
+  margin: auto;
+
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $dark-blue;
+
+  border: 2px solid $dark-blue;
+}
+
+.tabs__card--active .tabs__button {
+  color: $white;
+
+  border: none;
+  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}
+
+.tabs__background {
+  position: absolute;
+  right: -149px;
+  bottom: -149px;
+}
+
+@media (max-width: 1367px) {
+  .tabs {
+    padding: 0 118px;
+    padding-top: 27px;
+  }
+
+  .tabs__list-wrapper {
+    padding-bottom: 45px;
+  }
+
+  .tabs__item-button {
+    font-size: 18px;
+  }
+
+  .tabs__cards {
+    flex-direction: column;
+  }
+
+  .tabs__card {
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  .tabs__background {
+    right: -54px;
+
+    width: 423px;
+    height: 444px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    padding: 0 15px;
+    padding-top: 17px;
+  }
+
+  .tabs__item-button {
+    font-size: 16px;
+  }
+
+  .tabs__background {
+    display: none;
+  }
+}

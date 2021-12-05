@@ -1,5 +1,14 @@
+.main {
+  overflow: hidden;
+}
+
 .main__group {
   padding: 120px 103px;
+
+  &--gray {
+    position: relative;
+    background-color: $gray;
+  }
 }
 
 .main__title {
@@ -16,7 +25,7 @@
 
 .main__training {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .main__training-text-wrapper {
@@ -155,5 +164,4 @@
 
     margin-top: 40px;
   }
-
 }
