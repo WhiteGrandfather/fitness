@@ -1,5 +1,4 @@
 'use strict';
-// Тут будет кот ж)
 
 function renderTabs() {
   if (document.querySelector('.tabs')) {
@@ -38,6 +37,10 @@ function renderTabs() {
 
     renderLine();
   }
+}
+
+function renderSlider() {
+
 }
 
 renderTabs();
