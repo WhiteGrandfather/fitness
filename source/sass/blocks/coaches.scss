@@ -1,0 +1,151 @@
+.coaches {
+  margin: auto;
+}
+
+.coaches__wrapper {
+  position: relative;
+  padding-top: 51px;
+}
+
+.coaches__container {
+  width: 100%;
+  max-width: 1160px;
+  overflow: hidden;
+}
+
+.coaches__list {
+  position: relative;
+  display: flex;
+}
+
+.coaches__item {
+  position: relative;
+  flex-shrink: 0;
+
+  width: 260px;
+  margin-right: 40px;
+
+  transition: box-shadow 500ms;
+
+  &:hover {
+    box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+  }
+}
+
+.coaches__image {
+  width: 100%;
+  height: auto;
+}
+
+.coaches__text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+
+  background-color: transparent;
+  transition: background-color 500ms;
+}
+
+.coaches__item:hover .coaches__text-wrapper {
+  justify-content: center;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__name {
+  font-family: $Roboto-condensed;
+  text-align: center;
+  font-size: 18px;
+  line-height: 150%;
+  color: $white;
+}
+
+.coaches__type {
+  display: none;
+  font-family: $Roboto-condensed;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B6BDCC;
+}
+
+.coaches__item:hover .coaches__type  {
+  display: block;
+}
+
+.coaches__specs {
+  display: none;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.coaches__item:hover .coaches__specs {
+  display: flex;
+}
+
+.coaches__spec {
+  position: relative;
+
+  padding-left: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $white;
+    border-radius: 100%;
+  }
+}
+
+.coaches__text {
+  font-family: $Roboto-condensed;
+  font-size: 14px;
+  line-height: 150%;
+  color: $white;
+}
+
+.coaches__button {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+
+  padding: 0 10px;
+
+  font-size: 0;
+
+  &--next {
+    left: initial;
+    right: -60px;
+  }
+}
+
+.coaches__button-icon {
+  fill: none;
+  stroke: #AFAFAF;
+}
+
+.coaches__button:hover .coaches__button-icon {
+  stroke: gray;
+}
+
+
+.coaches__button--prev .coaches__button-icon {
+  transform: scale(-1, 1);
+}

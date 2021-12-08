@@ -4,10 +4,18 @@
 
 .main__group {
   padding: 120px 103px;
+  margin: auto;
 
   &--gray {
     position: relative;
     background-color: $gray;
+  }
+
+  &--no-padding {
+    max-width: 1160px;
+    padding-top: 0;
+
+    box-sizing: content-box;
   }
 }
 
@@ -21,6 +29,10 @@
   &--training {
     text-align: left;
   }
+}
+
+.main__group--no-padding .main__title {
+  text-align: left;
 }
 
 .main__training {
