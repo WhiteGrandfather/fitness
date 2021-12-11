@@ -1,0 +1,138 @@
+.contacts {
+  width: 50%;
+  flex-grow: 1;
+  padding: 69px 120px;
+  padding-bottom: 38px;
+
+  border-top: 1px solid #74819C;
+}
+
+.contacts__title {
+  font-family: $Bebas-neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $dark-blue;
+}
+
+.contacts__list {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 470px;
+  padding-top: 41px;
+}
+
+.contacts__item {
+  width: 50%;
+  padding-right: 60px;
+  padding-bottom: 20px;
+
+  &:nth-child(2n) {
+    padding-left: 60px;
+    padding-right: 0;
+
+    border-left: 1px solid #74819C;
+  }
+
+  &--no-padding {
+    padding-bottom: 0;
+  }
+}
+
+.contacts__name {
+  font-family: $Roboto-condensed;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: $dark-blue;
+}
+
+.contacts__text {
+  font-family: $Roboto-condensed;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black-blue;
+
+  &--link:hover {
+    color: $light-blue;
+  }
+}
+
+@media (max-width: 1367px) {
+  .contacts {
+    width: 100%;
+    padding: 36px 133px;
+    padding-right: 102px;
+
+    border: none;
+  }
+
+  .contacts__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .contacts__item {
+    padding-right: 48px;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 48px;
+    }
+  }
+
+  .contacts__name {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
+
+  .contacts__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 70px 15px;
+    padding-bottom: 63px;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contacts__list {
+    padding-top: 34px;
+
+    flex-direction: column;
+  }
+
+  .contacts__item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 21px;
+
+    &:nth-child(2n) {
+      padding: 0;
+      border: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__name {
+    margin-bottom: 10px;
+  }
+}

@@ -1,11 +1,11 @@
 .tabs {
-  padding-top: 33px;
+  padding-top: 19px;
 }
 
 .tabs__list-wrapper {
   max-width: 342px;
   margin: auto;
-  padding-bottom: 39px;
+  padding-bottom: 37px;
 }
 
 .tabs__list {
@@ -14,7 +14,7 @@
 }
 
 .tabs__item-button {
-  padding: 20px 0;
+  padding: 13px 0;
 
   font-family: $Roboto-condensed;
   font-size: 20px;
@@ -27,7 +27,6 @@
     opacity: 1;
   }
 }
-
 
 .tabs__line-wrapper {
   width: 100%;
@@ -89,18 +88,18 @@
 }
 
 .tabs__card-wrapper {
-  padding: 68px 20px;
+  padding: 63px 20px;
 
   background-color: $white;
 }
 
 .tabs__card--active .tabs__card-wrapper {
-  padding-top: 61px;
+  padding-top: 56px;
   padding-bottom: 61px;
 }
 
 .tabs__title {
-  margin-bottom: 22px;
+  margin-bottom: 9px;
 
   font-family: $Roboto-condensed;
   font-weight: 700;
@@ -123,8 +122,8 @@
   justify-content: center;
   align-items: baseline;
 
-  margin-top: 96px;
-  margin-bottom: 59px;
+  margin-top: 66px;
+  margin-bottom: 35px;
 }
 
 .tabs__price {
@@ -197,7 +196,7 @@
 @media (max-width: 1367px) {
   .tabs {
     padding: 0 118px;
-    padding-top: 27px;
+    padding-top: 14px;
   }
 
   .tabs__list-wrapper {
@@ -206,6 +205,10 @@
 
   .tabs__item-button {
     font-size: 18px;
+  }
+
+  .tabs__card-wrapper {
+    padding: 65px 20px;
   }
 
   .tabs__cards {
@@ -231,11 +234,56 @@
 @media (max-width: 767px) {
   .tabs {
     padding: 0 15px;
-    padding-top: 17px;
+  }
+
+  .tabs__list-wrapper {
+    padding-bottom: 35px;
+  }
+
+  .tabs__card {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &--active .tabs__card-wrapper {
+      padding: 44px 6px;
+      padding-bottom: 47px;
+    }
   }
 
   .tabs__item-button {
+    padding-bottom: 13px;
+
     font-size: 16px;
+  }
+
+  .tabs__card-wrapper {
+    padding: 50px 20px;
+    padding-bottom: 56px;
+  }
+
+  .tabs__title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .tabs__price-wrapper {
+    margin-top: 55px;
+    margin-bottom: 31px;
+  }
+
+  .tabs__price {
+    font-size: 48px;
+  }
+
+  .tabs__price-shadow {
+    font-size: 80px;
+  }
+
+  .tabs__price-icon {
+    width: 24px;
+    height: 33px;
   }
 
   .tabs__background {

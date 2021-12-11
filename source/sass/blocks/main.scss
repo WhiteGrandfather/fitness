@@ -11,12 +11,27 @@
     background-color: $gray;
   }
 
+  &--adv {
+    padding-bottom: 99px;
+  }
+
   &--no-padding {
     max-width: 1160px;
     padding-top: 0;
 
     box-sizing: content-box;
   }
+
+  &--small {
+    padding-top: 0;
+    padding-bottom: 79px;
+  }
+
+  &--big {
+    display: flex;
+    padding: 0;
+  }
+
 }
 
 .main__title {
@@ -81,9 +96,35 @@
   bottom: 0;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1367px) {
   .main__group {
     padding: 100px 45px;
+
+    &--no-padding {
+      padding-top: 0;
+      padding-bottom: 116px;
+
+      .main__title {
+        text-align: center;
+      }
+    }
+
+    &--adv {
+      padding-bottom: 90px;
+
+    }
+
+    &--small {
+      padding-top: 0;
+      padding-bottom: 60px;
+      margin-bottom: 0;
+    }
+
+    &--big {
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 26px;
+    }
   }
 
   .main__title {
@@ -103,24 +144,31 @@
   .main__training-text-wrapper {
     max-width: 502px;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 43px;
   }
 
   .main__training-top-text {
     text-align: center;
+    margin-bottom: 34px;
   }
 
   .main__training-text {
     text-align: center;
 
-    &:not(.main__training-text--not-tab) {
+    &--not-tab {
       display: none;
     }
   }
 
   .main__training-media {
+    width: 100%;
     padding-left: 0;
     padding-bottom: 83px;
+  }
+
+  .main__training-image {
+    width: 100%;
+    height: auto;
   }
 
   .main__video-wrapper {
@@ -128,12 +176,37 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+
+    width: 39.5%;
+  }
+
+  .video__image {
+    width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .main__group {
     padding: 70px 0;
+
+    &--gray.main__group--adv {
+      padding-bottom: 5px;
+
+    }
+
+    &--no-padding {
+      padding-top: 0;
+    }
+
+    &--small {
+      padding-top: 0;
+      padding-bottom: 55px;
+      margin-bottom: 0;
+    }
+
+    &--big {
+      padding: 0;
+    }
   }
 
   .main__title{
@@ -148,22 +221,24 @@
   .main__training-text-wrapper {
     max-width: initial;
     width: 100%;
-    padding: 40px 15px;
-    padding-top: 0;
+    padding: 0 15px;
+    padding-bottom: 33px;
   }
 
   .main__training-top-text {
-    margin-top: 3px;
-    margin-bottom: 28px;
+    margin-top: 5px;
+    margin-bottom: 24px;
     text-align: left;
   }
 
   .main__training-text {
     text-align: left;
+    padding-right: 27px;
   }
 
   .main__training-media {
     width: 100%;
+    padding-bottom: 0;
   }
 
   .main__training-image {
@@ -174,6 +249,7 @@
   .main__video-wrapper {
     position: relative;
 
+    width: 100%;
     margin-top: 40px;
   }
 }

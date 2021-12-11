@@ -1,5 +1,8 @@
 'use strict';
 
+const DESKTOP_SCREEN = 1368;
+const TABLET_SCREEN = 768;
+
 function renderTabs() {
   if (document.querySelector('.tabs')) {
     const START_SLIDE = 1;
@@ -66,9 +69,55 @@ function renderTabs() {
   }
 }
 
-renderTabs();
-
 function renderSlider() {
+  const desktopSlidesCount = 4;
+  const tabletSlidesCount = 2;
 
+  if (document.querySelector('.coaches'))  {
+    const slider = document.querySelector('.coaches__container');
+    const sliderWrapper = slider.querySelector('.coaches__list');
+    const sliderList = slider.querySelectorAll('.coaches__item');
+    const nextButton = document.querySelector('.coaches__button--next');
+    const prevButton = document.querySelector('.coaches__button--prev');
+    const firstSlide = 0;
+    let activeSlide = 0;
+
+    function renderSwipe(next = true) {
+      let slidesCount;
+
+      if (window.innerWidth >= DESKTOP_SCREEN) {
+        slidesCount = Math.ceil(sliderList.length / desktopSlidesCount);
+      } else if (window.innerWidth < DESKTOP_SCREEN && window.innerWidth >= TABLET_SCREEN) {
+        slidesCount =  Math.ceil(sliderList.length / tabletSlidesCount);
+      } else if (window.innerWidth < TABLET_SCREEN) {
+        slidesCount =  sliderList.length;
+      }
+
+      const lastSlide = slidesCount - 1;
+
+      if (next && activeSlide < lastSlide || activeSlide === firstSlide) {
+        activeSlide++;
+      } else if (!next && activeSlide !== firstSlide) {
+        activeSlide--;
+      }
+
+      sliderWrapper.style.transform = `translateX(-${100 * activeSlide}%)`;
+      nextButton.disabled = activeSlide === lastSlide;
+      prevButton.disabled = activeSlide === firstSlide;
+    }
+
+    function swipeNextHandler() {
+      renderSwipe();
+    }
+
+    function swipePrevHandler() {
+      renderSwipe(false);
+    }
+
+    prevButton.addEventListener('click', swipePrevHandler);
+    nextButton.addEventListener('click', swipeNextHandler);
+  }
 }
 
+renderTabs();
+renderSlider();

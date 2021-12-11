@@ -1,0 +1,275 @@
+.advantages {
+  padding-top: 50px;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  height: 342px;
+  margin: auto;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+
+  width: 340px;
+  padding-top: 64px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    .advantages__number-wrapper {
+      padding-left: 20px;
+    }
+  }
+
+  &--bordered {
+    padding-top: 0;
+    padding-bottom: 64px;
+
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
+  &--main {
+    flex-direction: column;
+    align-items: center;
+
+    width: 240px;
+    height: 307px;
+    padding: 48px 34px;
+    margin-top: 17px;
+
+    background-color: $blue;
+
+    .advantages__number-wrapper {
+      margin-right: 0;
+    }
+
+    .advantages__number {
+      margin-bottom: 10px;
+
+      color: $white;
+      text-align: center;
+    }
+
+    .advantages__units {
+      margin-bottom: 20px;
+
+      font-family: $Roboto-condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 150%;
+      color: $white;
+      text-align: center;
+    }
+
+    .advantages__text {
+      line-height: 150%;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+.advantages__number-wrapper {
+  margin-right: 30px;
+}
+
+.advantages__number {
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 71px;
+  color: #D10A42;
+  text-align: left;
+}
+
+.advantages__item:not(.advantages__item--main) .advantages__number {
+  background: linear-gradient(155deg, #D10A42 0%, #0041CA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages__units {
+  position: relative;
+  top: -11px;
+
+  font-family: $Roboto-condensed;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2E35AC;
+}
+
+.advantages__title {
+  font-family: $Roboto-condensed;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+  color: $dark-blue;
+}
+
+.advantages__text {
+  font-family: $Roboto-condensed;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: $dark-blue;
+}
+
+@media (max-width: 1367px) {
+  .advantages {
+    padding-top: 42px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+
+    height: auto;
+  }
+
+  .advantages__item {
+    width: calc(50% - 15px);
+    padding: 0;
+    border: none;
+
+    &--main {
+      width: 65.1%;
+      min-height: 239px;
+      margin: 41px auto;
+      padding: 32px;
+
+      height: auto;
+
+      .advantages__number {
+        margin-bottom: 4px;
+
+        font-size: 74px;
+      }
+
+      .advantages__units {
+        margin-bottom: 9px;
+
+        font-size: 22px;
+      }
+    }
+
+    &:nth-child(1) {
+      order: 1;
+
+      margin-right: 30px;
+
+      .advantages__number-wrapper {
+        padding-left: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 4;
+
+      margin-right: 30px;
+
+      .advantages__number-wrapper {
+        padding-left: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 5;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      .advantages__number-wrapper {
+        padding-left: 0;
+      }
+    }
+
+  }
+
+  .advantages__number {
+    font-size: 58px;
+    line-height: 100%;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+
+  .advantages__units {
+    top: -4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 45px;
+  }
+
+  .advantages__list {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    flex-grow: 1;
+
+    width: 100%;
+    margin-bottom: 38px;
+
+    &--main {
+      padding: 38px;
+      margin-top: 8px;
+
+      .advantages__number {
+        margin-bottom: 0;
+      }
+
+      .advantages__units {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__number-wrapper {
+    margin-right: 0;
+  }
+
+  .advantages__text-wrapper {
+    max-width: 226px;
+    margin: auto;
+  }
+
+  .advantages__title,
+  .advantages__units {
+    text-align: center;
+    line-height: 154%;
+  }
+
+  .advantages__text {
+    font-size: 16px;
+    text-align: center;
+  }
+}

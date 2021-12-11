@@ -119,13 +119,17 @@
   color: $white;
 }
 
+.header__social-hidden {
+  font-size: 0;
+}
+
 @media (min-width: 1400px) {
   .header {
     background-image: conic-gradient(from 130.31deg at 24% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1367px) {
   .header {
     min-height: 554px;
     padding: 40px 45px;
@@ -139,7 +143,7 @@
 
   .header__main {
     width: 52%;
-    padding-top: 60px;
+    padding-top: 94px;
     padding-right: 30px;
   }
 
@@ -160,7 +164,7 @@
   }
 
   .header__text {
-    top: 46%;
+    top: 54%;
     left: -37.5%;
   }
 
@@ -195,7 +199,7 @@
 
 @media (max-width: 767px) {
   .header {
-    min-height: 494px;
+    min-height: 491px;
     padding: 20px 15px;
 
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
@@ -217,8 +221,12 @@
   .header__main {
     min-width: 290px;
     margin: auto;
-    padding-top: 64px;
+    padding-top: 91px;
     padding-right: 0;
+  }
+
+  .header__title-wrapper {
+    margin-bottom: 45px;
   }
 
   .header__city {
@@ -230,6 +238,11 @@
   .header__title {
     font-size: 78px;
     line-height: 78px;
+  }
+
+  .header__text {
+    top: 53%;
+    left: -36.5%;
   }
 
   .header__button {
