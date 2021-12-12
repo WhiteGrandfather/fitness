@@ -364,7 +364,7 @@
       </div>
     </div>
 
-    <div class="main__group">
+    <div class="main__group main__group--promo">
       <div class="main__promo promo">
         <div class="promo__wrapper">
 
@@ -686,7 +686,7 @@
               <use xlink:href="#icon-arrow-big"></use>
             </svg>
           </button>
-          <button class="coaches__button coaches__button--next" data-slider="button-prev" type="button">
+          <button class="coaches__button coaches__button--next" data-slider="button-next" type="button">
             Вперед
             <svg class="coaches__button-icon" width="18" height="32">
               <use xlink:href="#icon-arrow-big"></use>
@@ -881,13 +881,15 @@
         <h2 class="form__title">Бесплатное занятие</h2>
 
         <form class="form__main" data-form="form">
+          <p class="form__success"><span class="form__client" data-form="client"></span>, спасибо за заявку!<br> В рабочее временя оператор свяжется с Вами</p>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input" type="text" name="name" placeholder="Имя">
+              <input class="form__input" type="text" name="name" placeholder="Имя" required="">
             </li>
 
             <li class="form__item">
-              <input class="form__input" type="text" name="phone" placeholder="Телефон" data-input="phone" data-mask="+7(__)-___-__-__">
+              <input class="form__input" type="text" name="phone" placeholder="Телефон" data-input="phone" data-mask="_(__)-___-__-__" data-phone-length="10" required="">
+              <p class="form__error">недопустимый символ</p>
             </li>
 
             <li class="form__item form__item--submit">

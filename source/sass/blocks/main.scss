@@ -3,11 +3,17 @@
 }
 
 .main__group {
-  padding: 120px 103px;
+  max-width: $desktop-container;
+  padding: 120px 15px;
   margin: auto;
+
+  &--promo {
+    padding: 120px 0;
+  }
 
   &--gray {
     position: relative;
+    max-width: initial;
     background-color: $gray;
   }
 
@@ -29,6 +35,8 @@
 
   &--big {
     display: flex;
+
+    max-width: initial;
     padding: 0;
   }
 
@@ -96,7 +104,7 @@
   bottom: 0;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $tablet) {
   .main__group {
     padding: 100px 45px;
 

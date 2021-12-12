@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $desktop-container) {
   .social__item {
     margin-right: 20px;
   }

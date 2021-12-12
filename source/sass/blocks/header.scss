@@ -1,6 +1,6 @@
 .header {
   min-height: 658px;
-  padding: 30px 103px;
+  padding: 30px 15px;
 
   background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 }
@@ -9,6 +9,8 @@
   position: relative;
 
   display: flex;
+  max-width: $desktop-container;
+  margin: auto;
 }
 
 .header__main {
@@ -129,7 +131,7 @@
   }
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $tablet) {
   .header {
     min-height: 554px;
     padding: 40px 45px;

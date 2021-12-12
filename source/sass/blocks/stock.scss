@@ -113,7 +113,7 @@
   color: $blue;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $desktop-container) {
   .stock {
     padding-top: 41px;
   }

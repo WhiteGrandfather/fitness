@@ -30,6 +30,7 @@
 }
 
 .form__item {
+  position: relative;
   width: calc(50% - 15px);
   margin-bottom: 30px;
 
@@ -69,6 +70,23 @@
     line-height: inherit;
     color: inherit;
   }
+
+  &.error {
+    border-color: $red;
+  }
+}
+
+.form__error {
+  position: absolute;
+
+  display: none;
+
+  font-family: $Roboto-condensed;
+  font-size: 14px;
+  color: red;
+}
+.error ~ .form__error {
+  display: block;
 }
 
 .form__submit {
@@ -95,7 +113,28 @@
   }
 }
 
-@media (max-width: 1367px) {
+.form__success {
+  display: none;
+  font-family: $Roboto-condensed;
+  color: $white;
+}
+
+.form__client {
+  text-transform: capitalize;
+}
+
+.form__main--success {
+  .form__list {
+    display: none;
+  }
+
+  .form__success {
+    display: block;
+  }
+}
+
+
+@media (max-width: $desktop-container) {
   .form {
     width: 100%;
     padding: 70px 132px;

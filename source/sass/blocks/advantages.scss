@@ -122,7 +122,7 @@
   color: $dark-blue;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $desktop-container) {
   .advantages {
     padding-top: 42px;
   }

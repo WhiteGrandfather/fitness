@@ -99,7 +99,7 @@
   width: 660px;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $tablet) {
   .promo__text-container {
     width: 292px;
     height: 292px;

@@ -1,5 +1,6 @@
 .coaches {
   margin: auto;
+
 }
 
 .coaches__wrapper {
@@ -158,7 +159,17 @@
   transform: scale(-1, 1);
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1300px) {
+  .coaches__item {
+    width: calc(25% - 15px);
+
+    &:not(:nth-child(4n)) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
   .coaches__wrapper {
     padding: 0 77px;
     padding-top: 41px;

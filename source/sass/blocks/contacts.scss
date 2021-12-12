@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $desktop-container) {
   .contacts {
     width: 100%;
     padding: 36px 133px;

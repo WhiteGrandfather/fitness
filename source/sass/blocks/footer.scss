@@ -34,11 +34,10 @@
   color: $white;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: $desktop-containerpx) {
   .footer {
     padding: 44px 45px;
   }
-
 
   .footer__item {
     &--nav {
