@@ -34,7 +34,7 @@
   color: $white;
 }
 
-@media (max-width: $desktop-containerpx) {
+@media (max-width: $desktop-container) {
   .footer {
     padding: 44px 45px;
   }

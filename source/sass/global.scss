@@ -61,10 +61,14 @@ body {
   color: $black-blue;
 }
 
+img {
+  display: block;
+}
+
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 h1, h2, h3, p {
@@ -82,8 +86,4 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-img {
-  display: block;
 }

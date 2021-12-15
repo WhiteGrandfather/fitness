@@ -191,6 +191,13 @@
   position: absolute;
   right: -149px;
   bottom: -149px;
+
+  width: 434px;
+  height: 494px;
+
+  background-image: url("/img/blin-x2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: $tablet) {
