@@ -1,4 +1,13 @@
 .social {
+  box-sizing: border-box;
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .social__list {

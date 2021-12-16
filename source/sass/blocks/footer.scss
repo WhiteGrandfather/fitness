@@ -1,15 +1,40 @@
 .footer {
+  display: flex;
+  justify-content: center;
+
   padding: 44px 103px;
+
   background-color: black;
+  box-sizing: border-box;
 
   a:hover {
     opacity: .8;
+  }
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  button {
+    padding: 0;
+    font-family: $Bebas-neue;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 
 .footer__list {
   display: flex;
   align-items: center;
+
+  max-width: 100%;
+  width: 1368px;
 }
 
 .footer__item {

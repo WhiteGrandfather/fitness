@@ -1,4 +1,7 @@
 @mixin button-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   min-width: 234px;
   padding: 19px;
@@ -13,4 +16,10 @@
   background-color: transparent;
 
   border: 4px solid $white;
+}
+
+@mixin ul-no-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

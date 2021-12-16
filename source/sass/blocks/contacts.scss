@@ -5,6 +5,16 @@
   padding-bottom: 38px;
 
   border-top: 1px solid #74819C;
+  box-sizing: border-box;
+
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .contacts__title {

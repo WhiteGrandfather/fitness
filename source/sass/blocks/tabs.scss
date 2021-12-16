@@ -1,5 +1,14 @@
 .tabs {
   padding-top: 19px;
+  box-sizing: border-box;
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .tabs__list-wrapper {
@@ -77,7 +86,7 @@
 .tabs__card {
   width: 360px;
 
-  &--active {
+  &:hover {
     padding: 7px;
     background-image: linear-gradient(130deg, #D10A42 0%,  #00359F 100%);
   }
@@ -93,7 +102,7 @@
   background-color: $white;
 }
 
-.tabs__card--active .tabs__card-wrapper {
+.tabs__card:hover .tabs__card-wrapper {
   padding-top: 56px;
   padding-bottom: 61px;
 }
@@ -131,6 +140,7 @@
   z-index: 2;
 
   display: inline-block;
+  vertical-align: initial;
 
   margin-right: 14px;
 
@@ -180,7 +190,7 @@
   border: 2px solid $dark-blue;
 }
 
-.tabs__card--active .tabs__button {
+.tabs__card:hover .tabs__button {
   color: $white;
 
   border: none;
@@ -252,7 +262,7 @@
       margin-bottom: 35px;
     }
 
-    &--active .tabs__card-wrapper {
+    &:hover .tabs__card-wrapper {
       padding: 44px 6px;
       padding-bottom: 47px;
     }

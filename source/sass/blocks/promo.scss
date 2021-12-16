@@ -1,5 +1,14 @@
 .promo {
   display: flex;
+  box-sizing: border-box;
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .promo__wrapper {
@@ -67,7 +76,7 @@
   color: $white;
 }
 
-.promo__text {
+p.promo__text {
   margin-bottom: 44px;
 
   font-family: $Roboto-condensed;

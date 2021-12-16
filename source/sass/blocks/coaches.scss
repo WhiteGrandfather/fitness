@@ -1,6 +1,15 @@
 .coaches {
   margin: auto;
 
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  box-sizing: border-box;
 }
 
 .coaches__wrapper {

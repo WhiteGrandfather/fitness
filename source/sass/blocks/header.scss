@@ -3,6 +3,25 @@
   padding: 30px 15px;
 
   background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  box-sizing: border-box;
+
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h1, h2, h3, p {
+    margin: 0;
+  }
+
+  button {
+    padding: 0;
+    font-family: $Bebas-neue;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .header__wrapper {
@@ -51,6 +70,7 @@
 
 .header__title {
   display: inline-block;
+  vertical-align: initial;
   margin: 0;
 
   font-family: $Bebas-neue;

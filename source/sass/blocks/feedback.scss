@@ -2,6 +2,15 @@
   display: flex;
   padding-top: 10px;
   margin: auto;
+  box-sizing: border-box;
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .feedback__slider {

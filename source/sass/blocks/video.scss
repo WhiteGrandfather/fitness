@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  box-sizing: border-box;
 
   &::before {
     position: absolute;
@@ -9,6 +10,14 @@
     height: 100%;
 
     background-color: rgba(20, 54, 122, 0.5);
+  }
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
   }
 }
 

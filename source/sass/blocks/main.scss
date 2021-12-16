@@ -1,5 +1,24 @@
 .main {
   overflow: hidden;
+  box-sizing: border-box;
+
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  button {
+    padding: 0;
+    font-family: $Bebas-neue;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .main__group {

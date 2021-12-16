@@ -1,5 +1,14 @@
 .stock {
   padding-top: 53px;
+  box-sizing: border-box;
+
+  ul {
+    @include ul-no-style;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
 }
 
 .stock__list {
@@ -138,7 +147,7 @@
     flex-grow: 1;
   }
 
-  .promo__image {
+  .stock__image {
     width: 100%;
     height: auto;
   }

@@ -48,10 +48,6 @@
   font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   min-width: 320px;
   margin: 0;
@@ -61,29 +57,17 @@ body {
   color: $black-blue;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 img {
   display: block;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h1, h2, h3, p {
-  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  padding: 0;
-  font-family: $Bebas-neue;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
